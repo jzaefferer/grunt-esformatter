@@ -1,4 +1,4 @@
-# grunt-esformatter v0.1.0 [![Build Status](https://travis-ci.org/jzaefferer/grunt-esformatter.png?branch=master)](https://travis-ci.org/jzaefferer/grunt-esformatter)
+# grunt-esformatter v0.2.0 [![Build Status](https://travis-ci.org/jzaefferer/grunt-esformatter.png?branch=master)](https://travis-ci.org/jzaefferer/grunt-esformatter)
 
 > Format JavaScript files.
 
@@ -122,4 +122,4 @@ cssmin: {
 
 Task submitted by [Jörn Zaefferer](http://bassistance.de)
 
-*This file was generated on Sat Dec 07 2013 17:07:50.*
+*This file was generated on Sat Dec 07 2013 18:14:26.*
