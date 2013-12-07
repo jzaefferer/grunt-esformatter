@@ -29,7 +29,8 @@ module.exports = function(grunt) {
     copy: {
       'tmp/default-preset.js': 'test/fixtures/shared.js',
       'tmp/jquery-preset.js': 'test/fixtures/shared.js',
-      'tmp/custom-settings.js': 'test/fixtures/shared.js'
+      'tmp/custom-settings.js': 'test/fixtures/shared.js',
+      'tmp/script.js': 'test/fixtures/script.js'
     },
 
     esformatter: {
@@ -47,6 +48,12 @@ module.exports = function(grunt) {
           }
         },
         src: 'tmp/custom-settings.js'
+      },
+      'script': {
+        options: {
+          skipHashbang: true
+        },
+        src: 'tmp/script.js'
       }
     },
 
