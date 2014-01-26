@@ -92,7 +92,7 @@ esformatter: {
 #### Format two sets of files with custom settings
 
 ```js
-cssmin: {
+esformatter: {
   four_space_indent: {
     options: {
       indent: {
