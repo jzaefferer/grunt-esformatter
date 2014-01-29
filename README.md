@@ -1,4 +1,4 @@
-# grunt-esformatter v0.2.0 [![Build Status](https://travis-ci.org/jzaefferer/grunt-esformatter.png?branch=master)](https://travis-ci.org/jzaefferer/grunt-esformatter)
+# grunt-esformatter [![Build Status](https://travis-ci.org/jzaefferer/grunt-esformatter.png?branch=master)](https://travis-ci.org/jzaefferer/grunt-esformatter)
 
 > Format JavaScript files.
 
@@ -112,11 +112,6 @@ esformatter: {
   }
 }
 ```
-
-
-## Release History
-
- * 2012-11-15   v0.1.0   First release
 
 ---
 
