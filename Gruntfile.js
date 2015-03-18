@@ -68,11 +68,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
-  grunt.loadNpmTasks('grunt-contrib-internal');
 
   // Remove tmp, copy files to format, format them, verify the result
   grunt.registerTask('test', ['clean', 'copy', 'esformatter', 'nodeunit']);
 
-  grunt.registerTask('default', ['jshint', 'test', 'build-contrib']);
+  grunt.registerTask('default', ['jshint', 'test']);
 
 };

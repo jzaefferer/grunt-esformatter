@@ -1,8 +1,6 @@
-# grunt-esformatter [![Build Status](https://travis-ci.org/jzaefferer/grunt-esformatter.png?branch=master)](https://travis-ci.org/jzaefferer/grunt-esformatter)
+# grunt-esformatter [![Build Status](https://travis-ci.org/jzaefferer/grunt-esformatter.svg?branch=master)](https://travis-ci.org/jzaefferer/grunt-esformatter)
 
-> Format JavaScript files.
-
-
+Format JavaScript files using [esformatter](https://github.com/millermedeiros/esformatter/).
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
@@ -113,8 +111,7 @@ esformatter: {
 }
 ```
 
----
 
-Task submitted by [Jörn Zaefferer](http://bassistance.de)
-
-*This file was generated on Sat Dec 07 2013 18:14:26.*
+## License
+Copyright Jörn Zaefferer.
+Licensed under the MIT license.
