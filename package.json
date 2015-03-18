@@ -1,7 +1,7 @@
 {
   "name": "grunt-esformatter",
   "description": "Format JavaScript files.",
-  "version": "0.2.5",
+  "version": "1.0.0",
   "homepage": "https://github.com/jzaefferer/grunt-esformatter",
   "author": {
     "name": "Jörn Zaefferer",
