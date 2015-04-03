@@ -8,6 +8,7 @@
 'use strict';
 
 var esformatter = require('esformatter');
+esformatter.register(require('esformatter-jsx'));
 
 module.exports = function(grunt) {
 
