@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "esformatter": "0.7.3",
-    "uderscore": "latest"
+    "underscore": "latest"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "0.11.0",
