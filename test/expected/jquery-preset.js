@@ -22,5 +22,4 @@ grunt.registerMultiTask( 'esformatter', 'Format JS files', function() {
 		} );
 	} );
 } );
-
 };

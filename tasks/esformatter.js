@@ -7,7 +7,9 @@
 
 'use strict';
 
-var esformatter = require('esformatter');
+var esformatter = require('esformatter'),
+  path = require('path'),
+  _ = require('underscore');
 
 module.exports = function(grunt) {
 
@@ -15,6 +17,16 @@ module.exports = function(grunt) {
     var options = this.options({
       skipHashbang: false
     });
+    // read options.config file, and merge with options object.
+    // then delete config key from options.
+    if (options.config) {
+      var configFilePath = path.resolve(options.config);
+      var configfile = require(configFilePath);
+      options = _.defaults(options, configfile);
+      delete options.config;
+    }
+    // read the .esformatter files recursively
+    options = esformatter.rc(options);
     this.files.forEach(function(f) {
       f.src.filter(function(filepath) {
         if (!grunt.file.exists(filepath)) {
