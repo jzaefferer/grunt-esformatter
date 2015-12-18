@@ -27,7 +27,24 @@ Task targets, files and options may be specified according to the grunt [Configu
 
 Files are formatted with [esformatter](https://github.com/millermedeiros/esformatter/).
 
+## Configuration
+When running `esformatter` task in grunt, it will look for the
+closest `.esformatter` file and use that as a setting. Valuse from this file will override
+default values for options.
+You also have the option to put your `esformatter` settings inside the
+`package.json` file under the `esformatter` property. 
+
 ### Options
+
+Values from this object will override the `.esfromatter` file values.
+
+#### config
+
+Type: `String`
+Default: `undefined`
+
+Path of the config file. Values from options object, will override the config file
+values.  
 
 #### preset
 
