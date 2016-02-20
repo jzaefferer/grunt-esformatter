@@ -18,5 +18,6 @@ exports.esformatter = {
   'default': generateTest('default-preset.js', 'format with default preset'),
   'jquery': generateTest('jquery-preset.js', 'format with jquery preset'),
   'custom': generateTest('custom-settings.js', 'format with custom settings'),
+  'custom-config': generateTest('custom-config.js', 'format with custom config'),
   'script': generateTest('script.js', 'skip first line starting with #!')
 };

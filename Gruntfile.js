@@ -30,6 +30,7 @@ module.exports = function(grunt) {
       'tmp/default-preset.js': 'test/fixtures/shared.js',
       'tmp/jquery-preset.js': 'test/fixtures/shared.js',
       'tmp/custom-settings.js': 'test/fixtures/shared.js',
+      'tmp/custom-config.js': 'test/fixtures/shared.js',
       'tmp/script.js': 'test/fixtures/script.js'
     },
 
@@ -40,6 +41,12 @@ module.exports = function(grunt) {
           preset: 'jquery'
         },
         src: 'tmp/jquery-preset.js'
+      },
+      'config-file': {
+        options: {
+          config: 'test/config-files/config.json'
+        },
+        src: 'tmp/custom-config.js'
       },
       'custom-settings': {
         options: {
