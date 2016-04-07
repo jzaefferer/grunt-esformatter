@@ -12,9 +12,16 @@ var esformatter = require('esformatter');
 module.exports = function(grunt) {
 
   grunt.registerMultiTask('esformatter', 'Format JS files', function() {
-    var options = this.options({
+    var customOptions = this.options({
       skipHashbang: false
     });
+    try {
+      var options = esformatter.rc(customOptions);
+    } catch(e) {
+      grunt.log.error('Exception while loading `.esformatter` options.');
+      grunt.log.error(e.stack);
+      return;
+    }
     this.files.forEach(function(f) {
       f.src.filter(function(filepath) {
         if (!grunt.file.exists(filepath)) {
